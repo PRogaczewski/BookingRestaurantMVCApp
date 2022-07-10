@@ -1,0 +1,73 @@
+﻿@model RestaurantLibrary.ViewModels.RestaurantConfirmation
+@{
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Confirmation</title>
+</head>
+
+<body>
+    <h1>Confirmation page</h1>
+
+    <div class="m-2">
+        <h3>Thank you! Your confirmation</h3>
+        <table class="table table-sm table-striped table-bordered">
+            <thead>
+                <tr>
+                    <td>
+                        @Html.DisplayNameFor(model => model.Firstname)
+                    </td>
+                    <td>
+                        @Html.DisplayNameFor(model => model.Lastname)
+                    </td>
+                    <td>
+                        @Html.DisplayNameFor(model => model.restaurant)
+                    </td>
+                    <td>
+                        @Html.DisplayNameFor(model => model.restaurant.Category)
+                    </td>
+                    <td>
+                        @Html.DisplayNameFor(model => model.restaurant.Address)
+                    </td>
+                    <td>
+                        @Html.DisplayNameFor(model => model.NumberOfSeats)
+                    </td>
+                    <td>
+                        @Html.DisplayNameFor(model => model.StartDate)
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        @Html.DisplayFor(model => model.Firstname)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => model.Lastname)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => model.restaurant.Name)
+                    </td>
+                    <td>
+                         @Html.DisplayFor(model => model.restaurant.Category)
+                     </td>
+                     <td>
+                         @Html.DisplayFor(model => model.restaurant.Address.City)
+                         @Html.DisplayFor(model => model.restaurant.Address.Street)
+                     </td>
+                     <td>
+                         @Html.DisplayFor(model => model.NumberOfSeats)
+                     </td>
+                     <td>
+                         @Html.DisplayFor(model => model.StartDate)
+                     </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

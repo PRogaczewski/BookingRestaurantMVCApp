@@ -1,0 +1,86 @@
+﻿@model IEnumerable<RestaurantLibrary.Models.Restaurant>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>GetRestaurants</title>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <form asp-action="GetRestaurantsByName" class="form-inline">
+            <input class="form-control mr-sm-2" type="search" id="searchbar" placeholder="Search..." aria-label="Search" name="searchName">
+            <button class="btn btn-outline-success my-2 my-sm-0" onclick="SearchForRestaurant()">Search</button>
+        </form>
+    </nav>
+    <div class="m-2">
+        <p>
+            <a asp-action="Create">Create New</a>
+        </p>
+        <h3>Restaurants</h3>
+        <table class="table table-sm table-striped table-bordered">
+            <thead>
+                <tr>
+                    <td>
+                        @Html.DisplayNameFor(model => model.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayNameFor(model => model.Description)
+                    </td>
+                    <td>
+                        @Html.DisplayNameFor(model => model.Category)
+                    </td>
+                    <td>
+                        @Html.DisplayNameFor(model => model.ContactNumber)
+                    </td>
+                    <td>
+                        @Html.DisplayNameFor(model => model.Address)
+                    </td>
+                    <td>
+                        <label>Available tables</label>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Description)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Category)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ContactNumber)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Address.City)
+                            @Html.DisplayFor(modelItem => item.Address.Street)
+                        </td>
+                        <td>
+                            @if (item.Tables.Count() > 0)
+                            {
+                                <label>Yes</label>
+                            }
+                            else
+                            {
+                                <label>No</label>
+                            }
+                        </td>
+                        <td>
+                            @*@Html.ActionLink("Edit", "Update", new {  id=item.Id  }) |*@
+                            @Html.ActionLink("Select", "RestaurantDetails", new { id = item.Id })
+                            @*@Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })*@
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

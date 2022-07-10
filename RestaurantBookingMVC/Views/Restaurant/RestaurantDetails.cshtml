@@ -1,0 +1,187 @@
+﻿@model RestaurantLibrary.ViewModels.RestaurantBookedTable
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>RestaurantDetails</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+</head>
+<body>
+    <form asp-controller="Booking" asp-action="GetConfirmation">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div>
+            <h3>Restaurant details</h3>
+            <hr />
+            <dl class="row">
+                <input asp-for="restaurant.Id" class="control-label" hidden id="restId" />
+                <dt class="col-sm-2">
+                    <label asp-for="restaurant.Name" class="control-label"></label>
+                </dt>
+                <dd class="col-sm-10">
+                    <input asp-for="restaurant.Name" class="form-control" hidden />
+                    @Html.DisplayFor(modelItem => Model.restaurant.Name)
+                </dd>
+                <dt class="col-sm-2">
+                    <label asp-for="restaurant.Description" class="control-label"></label>
+                </dt>
+                <dd class="col-sm-10">
+                    <input asp-for="restaurant.Description" class="form-control" hidden />
+                    @Html.DisplayFor(modelItem => Model.restaurant.Description)
+                </dd>
+                <dt class="col-sm-2">
+                    <label asp-for="restaurant.Category" class="control-label"></label>
+                </dt>
+                <dd class="col-sm-10">
+                    <input asp-for="restaurant.Category" class="form-control" hidden />
+                    @Html.DisplayFor(modelItem => Model.restaurant.Category)
+                </dd>
+                <dt class="col-sm-2">
+                    <label asp-for="restaurant.ContactNumber" class="control-label"></label>
+                </dt>
+                <dd class="col-sm-10">
+                    <input asp-for="restaurant.ContactNumber" class="form-control" hidden />
+                    @Html.DisplayFor(modelItem => Model.restaurant.ContactNumber)
+                </dd>
+                <dt class="col-sm-2">
+                    <label asp-for="restaurant.Address.City" class="control-label"></label>
+                </dt>
+                <dd class="col-sm-10">
+                    <input asp-for="restaurant.Address.City" class="form-control" hidden />
+                    @Html.DisplayFor(modelItem => Model.restaurant.Address.City)
+                </dd>
+                <dt class="col-sm-2">
+                    <label asp-for="restaurant.Address.Street" class="control-label"></label>
+                </dt>
+                <dd class="col-sm-10">
+                    <input asp-for="restaurant.Address.Street" class="form-control" hidden />
+                    @Html.DisplayFor(modelItem => Model.restaurant.Address.Street)
+                </dd>
+                <dt class="col-sm-2">
+                    <label asp-for="Tables" class="control-label"></label>
+                </dt>
+                <row>
+                    <tbody class="col-sm-10">
+                        @foreach (var item in Model.Tables)
+                        {
+                            <tr>
+                                <td>@item.NumberOfSeats </td>
+                            </tr>
+                        }
+                    </tbody>
+                </row>
+            </dl>
+        </div>
+
+        <br />
+        @if (Model.Tables.Exists(t => t.NumberOfSeats > 1))
+        {
+            <div class="fallbackTimePicker">
+                <div>
+                    <span>
+                        <label>For how many people?</label>
+                        <select asp-for="NumberOfSeats" id="seats" class="control-label">
+                            @foreach (var item in Model.Tables)
+                            {
+                                <option value=@item.NumberOfSeats>@item.NumberOfSeats</option>
+                            }
+                        </select>
+                        <span asp-validation-for="NumberOfSeats" class="text-danger"></span>
+                    </span>
+                </div>
+            </div>
+            <br />
+
+            <input asp-for="StartDate" type="text" id="date" class="control-label" />
+            <span asp-validation-for="StartDate" class="text-danger"></span>
+
+            <script src="~/js/DatpickerScript.js"></script>
+
+            <p class="fallbackLabel">Choose the time (opening hours 11:00 to 21:00):</p>
+            <div class="fallbackTimePicker">
+                <div>
+                    <span>
+                        <label>Time:</label>
+                        <select asp-for="Time" id="hour" class="control-label">
+                            <option value="None" selected disabled>Time</option>
+                            <option value="11:00">11:00</option>
+                            <option value="12:00">12:00</option>
+                            <option value="13:00">13:00</option>
+                            <option value="14:00">14:00</option>
+                            <option value="15:00">15:00</option>
+                            <option value="16:00">16:00</option>
+                            <option value="17:00">17:00</option>
+                            <option value="18:00">18:00</option>
+                            <option value="19:00">19:00</option>
+                            <option value="20:00">20:00</option>
+                            <option value="21:00">21:00</option>
+                        </select>
+                        <span asp-validation-for="Time" class="text-danger"></span>
+                    </span>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <label asp-for="Firstname" class="control-label"></label>
+                <input asp-for="Firstname" class="control-label" />
+                <span asp-validation-for="Firstname" class="text-danger"></span>
+            </div>
+            <div class="col-sm-2">
+                <label asp-for="Lastname" class="control-label"></label>
+                <input asp-for="Lastname" class="control-label" />
+                <span asp-validation-for="Lastname" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <input type="submit" value="Confirm" class="btn btn-outline-success" />
+            </div>
+        }
+        else
+        {
+            <h4>No tables available</h4>
+        }
+
+    </form>
+    <script src="~/js/AvailableTableScript.js"></script>
+    <script type="text/javascript">
+
+        function CheckForTable() {
+            if (document.getElementById("hour").value != "None") {
+                $.ajax({
+                    type: 'POST',
+                    url: "@Url.Action("Result","Booking")",
+                    data: {
+                        inputVal: screenInput.val(),
+                        inputId: restIdInput.val(),
+                        inputDate: dateInput.val(),
+                        inputPeople: peopleInput.val()
+                    },
+                    success: function(response) {
+                        if (response.success)
+                            alert("OK");
+                        else {
+                            alert("Table is already booked.");
+                            document.getElementById("hour").value = "None";
+                        }
+                            
+                    },
+                    dataType: "json"
+                });
+            }
+        }
+    </script>
+    <br />
+    <div>
+        <a asp-action="Update" asp-route-id="@Model.Id" class="btn btn-danger">Edit</a> |
+        <a asp-action="GetRestaurants" class="btn btn-outline-info">Back to List</a>
+    </div>
+
+    @section Scripts {
+        @{
+            await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        }
+    }
+    </body>
+    </html>

@@ -1,0 +1,286 @@
+2022-07-07 21:21:48.4318||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2022-07-07 21:21:48.5165||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Rogal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2022-07-07 21:21:48.5258||DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\Rogal\AppData\Local\ASP.NET\DataProtection-Keys\key-be95c7ac-7a85-4349-9351-b1341561c06e.xml'. 
+2022-07-07 21:21:48.5258||DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {be95c7ac-7a85-4349-9351-b1341561c06e}. 
+2022-07-07 21:21:48.5463||DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Considering key {be95c7ac-7a85-4349-9351-b1341561c06e} with expiration date 2022-06-26 14:35:11Z as default key. 
+2022-07-07 21:21:48.5463||DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Key {be95c7ac-7a85-4349-9351-b1341561c06e} is no longer under consideration as default key because it is expired, revoked, or cannot be deciphered. 
+2022-07-07 21:21:48.6217||DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2022-07-07 21:21:48.6217||DEBUG|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor|Decrypting secret element using Windows DPAPI. 
+2022-07-07 21:21:48.6217||DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2022-07-07 21:21:48.6217||DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC. 
+2022-07-07 21:21:48.6326||DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC. 
+2022-07-07 21:21:48.6326||DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Repository contains no viable default key. Caller should generate a key with immediate activation. 
+2022-07-07 21:21:48.6326||DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Policy resolution states that a new key should be added to the key ring. 
+2022-07-07 21:21:48.6326||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Creating key {755a9100-ee5d-4079-a493-d932ce14a0b7} with creation date 2022-07-07 19:21:48Z, activation date 2022-07-07 19:21:48Z, and expiration date 2022-10-05 19:21:48Z. 
+2022-07-07 21:21:48.6326||DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Descriptor deserializer type for key {755a9100-ee5d-4079-a493-d932ce14a0b7} is 'Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'. 
+2022-07-07 21:21:48.6326||DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|No key escrow sink found. Not writing key {755a9100-ee5d-4079-a493-d932ce14a0b7} to escrow. 
+2022-07-07 21:21:48.6582||DEBUG|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlEncryptor|Encrypting to Windows DPAPI for current user account (DESKTOP-B1BEG5C\Rogal). 
+2022-07-07 21:21:48.6582||INFO|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Writing data to file 'C:\Users\Rogal\AppData\Local\ASP.NET\DataProtection-Keys\key-755a9100-ee5d-4079-a493-d932ce14a0b7.xml'. 
+2022-07-07 21:21:48.6582||DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Key cache expiration token triggered by 'CreateNewKey' operation. 
+2022-07-07 21:21:48.6582||DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\Rogal\AppData\Local\ASP.NET\DataProtection-Keys\key-755a9100-ee5d-4079-a493-d932ce14a0b7.xml'. 
+2022-07-07 21:21:48.6660||DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\Rogal\AppData\Local\ASP.NET\DataProtection-Keys\key-be95c7ac-7a85-4349-9351-b1341561c06e.xml'. 
+2022-07-07 21:21:48.6660||DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {755a9100-ee5d-4079-a493-d932ce14a0b7}. 
+2022-07-07 21:21:48.6660||DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {be95c7ac-7a85-4349-9351-b1341561c06e}. 
+2022-07-07 21:21:48.6660||DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Considering key {755a9100-ee5d-4079-a493-d932ce14a0b7} with expiration date 2022-10-05 19:21:48Z as default key. 
+2022-07-07 21:21:48.6660||DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2022-07-07 21:21:48.6660||DEBUG|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor|Decrypting secret element using Windows DPAPI. 
+2022-07-07 21:21:48.6660||DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2022-07-07 21:21:48.6660||DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC. 
+2022-07-07 21:21:48.6660||DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC. 
+2022-07-07 21:21:48.6660||DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Using key {755a9100-ee5d-4079-a493-d932ce14a0b7} as the default key. 
+2022-07-07 21:21:48.6660||DEBUG|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|Key ring with default key {755a9100-ee5d-4079-a493-d932ce14a0b7} was loaded during application startup. 
+2022-07-07 21:21:48.9810||DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework. 
+2022-07-07 21:21:49.3794||DEBUG|Microsoft.EntityFrameworkCore.Model|The index {'UserId'} was not created on entity type 'IdentityUserRole<string>' as the properties are already covered by the index {'UserId', 'RoleId'}. 
+2022-07-07 21:21:49.3794||DEBUG|Microsoft.EntityFrameworkCore.Model|The index {'UserId'} was not created on entity type 'IdentityUserToken<string>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}. 
+2022-07-07 21:21:49.5209||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 5.0.17 initialized 'UsersDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2022-07-07 21:21:49.6391||DEBUG|Microsoft.EntityFrameworkCore.Query|Compiling query expression: 
+'DbSet<IdentityRole>()
+    .Any()' 
+2022-07-07 21:21:49.7477||DEBUG|Microsoft.EntityFrameworkCore.Query|Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<bool>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> 0
+        SELECT EXISTS (
+            Projection Mapping:
+            SELECT 1
+            FROM AspNetRoles AS a)), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, bool>, 
+    RestaurantLibrary.Connection.UsersDbContext, 
+    False, 
+    False
+)
+    .Single()' 
+2022-07-07 21:21:49.7722||DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2022-07-07 21:21:49.8079||DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (34ms). 
+2022-07-07 21:21:49.8079||DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'RestaurantBookingDbUsers' on server '.\'. 
+2022-07-07 21:22:00.1836||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2022-07-07 21:22:00.2257||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Rogal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2022-07-07 21:22:00.2257||DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\Rogal\AppData\Local\ASP.NET\DataProtection-Keys\key-755a9100-ee5d-4079-a493-d932ce14a0b7.xml'. 
+2022-07-07 21:22:00.2257||DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\Rogal\AppData\Local\ASP.NET\DataProtection-Keys\key-be95c7ac-7a85-4349-9351-b1341561c06e.xml'. 
+2022-07-07 21:22:00.2257||DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {755a9100-ee5d-4079-a493-d932ce14a0b7}. 
+2022-07-07 21:22:00.2414||DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {be95c7ac-7a85-4349-9351-b1341561c06e}. 
+2022-07-07 21:22:00.2414||DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Considering key {755a9100-ee5d-4079-a493-d932ce14a0b7} with expiration date 2022-10-05 19:21:48Z as default key. 
+2022-07-07 21:22:00.2726||DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2022-07-07 21:22:00.2726||DEBUG|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor|Decrypting secret element using Windows DPAPI. 
+2022-07-07 21:22:00.2726||DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2022-07-07 21:22:00.2726||DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC. 
+2022-07-07 21:22:00.2726||DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC. 
+2022-07-07 21:22:00.2726||DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Using key {755a9100-ee5d-4079-a493-d932ce14a0b7} as the default key. 
+2022-07-07 21:22:00.2726||DEBUG|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|Key ring with default key {755a9100-ee5d-4079-a493-d932ce14a0b7} was loaded during application startup. 
+2022-07-07 21:22:00.3726||DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework. 
+2022-07-07 21:22:00.6854||DEBUG|Microsoft.EntityFrameworkCore.Model|The index {'UserId'} was not created on entity type 'IdentityUserRole<string>' as the properties are already covered by the index {'UserId', 'RoleId'}. 
+2022-07-07 21:22:00.6854||DEBUG|Microsoft.EntityFrameworkCore.Model|The index {'UserId'} was not created on entity type 'IdentityUserToken<string>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}. 
+2022-07-07 21:22:00.8253||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 5.0.17 initialized 'UsersDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2022-07-07 21:22:00.8607||DEBUG|Microsoft.EntityFrameworkCore.Query|Compiling query expression: 
+'DbSet<IdentityRole>()
+    .Any()' 
+2022-07-07 21:22:00.9513||DEBUG|Microsoft.EntityFrameworkCore.Query|Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<bool>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> 0
+        SELECT EXISTS (
+            Projection Mapping:
+            SELECT 1
+            FROM AspNetRoles AS a)), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, bool>, 
+    RestaurantLibrary.Connection.UsersDbContext, 
+    False, 
+    False
+)
+    .Single()' 
+2022-07-07 21:22:00.9722||DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2022-07-07 21:22:00.9930||DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (19ms). 
+2022-07-07 21:22:00.9930||DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'RestaurantBookingDbUsers' on server '//.'. 
+2022-07-07 21:22:37.6238||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2022-07-07 21:22:37.6653||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Rogal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2022-07-07 21:22:37.6653||DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\Rogal\AppData\Local\ASP.NET\DataProtection-Keys\key-755a9100-ee5d-4079-a493-d932ce14a0b7.xml'. 
+2022-07-07 21:22:37.6653||DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\Rogal\AppData\Local\ASP.NET\DataProtection-Keys\key-be95c7ac-7a85-4349-9351-b1341561c06e.xml'. 
+2022-07-07 21:22:37.6653||DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {755a9100-ee5d-4079-a493-d932ce14a0b7}. 
+2022-07-07 21:22:37.6809||DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {be95c7ac-7a85-4349-9351-b1341561c06e}. 
+2022-07-07 21:22:37.6809||DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Considering key {755a9100-ee5d-4079-a493-d932ce14a0b7} with expiration date 2022-10-05 19:21:48Z as default key. 
+2022-07-07 21:22:37.7127||DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2022-07-07 21:22:37.7127||DEBUG|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor|Decrypting secret element using Windows DPAPI. 
+2022-07-07 21:22:37.7127||DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2022-07-07 21:22:37.7127||DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC. 
+2022-07-07 21:22:37.7127||DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC. 
+2022-07-07 21:22:37.7127||DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Using key {755a9100-ee5d-4079-a493-d932ce14a0b7} as the default key. 
+2022-07-07 21:22:37.7127||DEBUG|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|Key ring with default key {755a9100-ee5d-4079-a493-d932ce14a0b7} was loaded during application startup. 
+2022-07-07 21:22:37.8138||DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework. 
+2022-07-07 21:22:38.1264||DEBUG|Microsoft.EntityFrameworkCore.Model|The index {'UserId'} was not created on entity type 'IdentityUserRole<string>' as the properties are already covered by the index {'UserId', 'RoleId'}. 
+2022-07-07 21:22:38.1264||DEBUG|Microsoft.EntityFrameworkCore.Model|The index {'UserId'} was not created on entity type 'IdentityUserToken<string>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}. 
+2022-07-07 21:22:38.2638||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 5.0.17 initialized 'UsersDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2022-07-07 21:22:38.2984||DEBUG|Microsoft.EntityFrameworkCore.Query|Compiling query expression: 
+'DbSet<IdentityRole>()
+    .Any()' 
+2022-07-07 21:22:38.3866||DEBUG|Microsoft.EntityFrameworkCore.Query|Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<bool>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> 0
+        SELECT EXISTS (
+            Projection Mapping:
+            SELECT 1
+            FROM AspNetRoles AS a)), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, bool>, 
+    RestaurantLibrary.Connection.UsersDbContext, 
+    False, 
+    False
+)
+    .Single()' 
+2022-07-07 21:22:38.4076||DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2022-07-07 21:22:38.4285||DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (19ms). 
+2022-07-07 21:22:38.4285||DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'RestaurantBookingDbUsers' on server 'DESKTOP-B1BEG5C'. 
+2022-07-07 21:22:38.6080||DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'RestaurantBookingDbUsers' on server 'DESKTOP-B1BEG5C'. 
+2022-07-07 21:22:38.6080||DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetRoles] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END 
+2022-07-07 21:22:38.6358||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (24ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetRoles] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END 
+2022-07-07 21:22:38.6358||DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed. 
+2022-07-07 21:22:38.6358||DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'RestaurantBookingDbUsers' on server 'DESKTOP-B1BEG5C'. 
+2022-07-07 21:22:38.6472||DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'RestaurantBookingDbUsers' on server 'DESKTOP-B1BEG5C'. 
+2022-07-07 21:22:38.7376||DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'UsersDbContext' disposed. 
+2022-07-07 21:22:38.7581||DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly RestaurantBookingMVC 
+2022-07-07 21:22:38.7581||DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh 
+2022-07-07 21:22:38.7581||DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net 
+2022-07-07 21:22:38.7581||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-07-07 21:22:38.7581||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-07-07 21:22:38.7581||INFO|Microsoft.Hosting.Lifetime|Content root path: E:\CS\WEB\RestaurantBookingApp\RestaurantBookingMVC 
+2022-07-07 21:22:38.7581||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started 
+2022-07-07 21:22:38.8081||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:44377/ - - 
+2022-07-07 21:22:38.8382||DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. 
+2022-07-07 21:22:38.8382||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-07-07 21:22:38.8382||DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path / does not match a supported file type 
+2022-07-07 21:22:38.8584||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/' 
+2022-07-07 21:22:38.8584||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'RestaurantBookingMVC.Controllers.HomeController.Index (RestaurantBookingMVC)' with route pattern '{controller=Home}/{action=Index}/{id?}' is valid for the request path '/' 
+2022-07-07 21:22:38.8584||DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'RestaurantBookingMVC.Controllers.HomeController.Index (RestaurantBookingMVC)' 
+2022-07-07 21:22:38.8584||DEBUG|Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler|AuthenticationScheme: Identity.Application was not authenticated. 
+2022-07-07 21:22:38.8665||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'RestaurantBookingMVC.Controllers.HomeController.Index (RestaurantBookingMVC)' 
+2022-07-07 21:22:38.8665||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2022-07-07 21:22:38.8665||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller RestaurantBookingMVC.Controllers.HomeController (RestaurantBookingMVC). 
+2022-07-07 21:22:38.8665||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2022-07-07 21:22:38.8665||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter 
+2022-07-07 21:22:38.8665||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648), Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000) 
+2022-07-07 21:22:38.8665||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2022-07-07 21:22:38.8665||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter 
+2022-07-07 21:22:38.8665||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: Before executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-07-07 21:22:38.8665||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: After executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-07-07 21:22:38.8665||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller RestaurantBookingMVC.Controllers.HomeController (RestaurantBookingMVC) 
+2022-07-07 21:22:38.8665||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller RestaurantBookingMVC.Controllers.HomeController (RestaurantBookingMVC) 
+2022-07-07 21:22:38.8665||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecutionAsync on filter Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter. 
+2022-07-07 21:22:38.8665||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-07-07 21:22:38.8665||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-07-07 21:22:38.9777||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method RestaurantBookingMVC.Controllers.HomeController.Index (RestaurantBookingMVC) - Validation state: Valid 
+2022-07-07 21:22:38.9777||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method RestaurantBookingMVC.Controllers.HomeController.Index (RestaurantBookingMVC), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.5235ms. 
+2022-07-07 21:22:38.9777||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-07-07 21:22:38.9777||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-07-07 21:22:38.9777||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecutionAsync on filter Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter. 
+2022-07-07 21:22:38.9777||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-07-07 21:22:38.9777||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-07-07 21:22:38.9777||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.ViewResult. 
+2022-07-07 21:22:38.9777||DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Account/Login.cshtml'. 
+2022-07-07 21:22:38.9777||DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Account/Register.cshtml'. 
+2022-07-07 21:22:38.9777||DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Booking/GetConfirmation.cshtml'. 
+2022-07-07 21:22:38.9777||DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Home/Index.cshtml'. 
+2022-07-07 21:22:38.9777||DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Restaurant/Create.cshtml'. 
+2022-07-07 21:22:38.9777||DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Restaurant/GetRestaurants.cshtml'. 
+2022-07-07 21:22:38.9777||DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Restaurant/RestaurantDetails.cshtml'. 
+2022-07-07 21:22:38.9777||DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Restaurant/Update.cshtml'. 
+2022-07-07 21:22:38.9777||DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Shared/Error.cshtml'. 
+2022-07-07 21:22:38.9777||DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Shared/_Layout.cshtml'. 
+2022-07-07 21:22:38.9777||DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Shared/_ValidationScriptsPartial.cshtml'. 
+2022-07-07 21:22:38.9777||DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/_ViewImports.cshtml'. 
+2022-07-07 21:22:38.9777||DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/_ViewStart.cshtml'. 
+2022-07-07 21:22:38.9777||DEBUG|Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine|View lookup cache miss for view 'Index' in controller 'Home'. 
+2022-07-07 21:22:38.9777||TRACE|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Located compiled view for view at path '/Views/Home/Index.cshtml'. 
+2022-07-07 21:22:38.9777||TRACE|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Could not find a file for view at path '/Views/Home/_ViewStart.cshtml'. 
+2022-07-07 21:22:38.9777||TRACE|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Located compiled view for view at path '/Views/_ViewStart.cshtml'. 
+2022-07-07 21:22:38.9777||TRACE|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Could not find a file for view at path '/_ViewStart.cshtml'. 
+2022-07-07 21:22:38.9914||INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2022-07-07 21:22:38.9914||DEBUG|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|The view path '/Views/Home/Index.cshtml' was found in 3.9598ms. 
+2022-07-07 21:22:39.0289||DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-07-07 21:22:39.0289||DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Restaurant/GetRestaurants and  
+2022-07-07 21:22:39.0289||DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Restaurant/GetRestaurants 
+2022-07-07 21:22:39.0434||DEBUG|Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine|View lookup cache miss for view '_Layout' in controller 'Home'. 
+2022-07-07 21:22:39.0434||TRACE|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Could not find a file for view at path '/Views/Home/_Layout.cshtml'. 
+2022-07-07 21:22:39.0434||TRACE|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Located compiled view for view at path '/Views/Shared/_Layout.cshtml'. 
+2022-07-07 21:22:39.0600||DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-07-07 21:22:39.0600||DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in  and  
+2022-07-07 21:22:39.0600||DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result / 
+2022-07-07 21:22:39.0600||DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-07-07 21:22:39.0600||DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in  and  
+2022-07-07 21:22:39.0600||DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result / 
+2022-07-07 21:22:39.0600||DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-07-07 21:22:39.0600||DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Account/Login and  
+2022-07-07 21:22:39.0600||DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Account/Login 
+2022-07-07 21:22:39.0600||DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-07-07 21:22:39.0600||DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Account/Register and  
+2022-07-07 21:22:39.0600||DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Account/Register 
+2022-07-07 21:22:39.1594||INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 171.842ms. 
+2022-07-07 21:22:39.1594||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.ViewResult. 
+2022-07-07 21:22:39.1594||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-07-07 21:22:39.1594||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-07-07 21:22:39.1594||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: Before executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-07-07 21:22:39.1594||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: After executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-07-07 21:22:39.1594||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action RestaurantBookingMVC.Controllers.HomeController.Index (RestaurantBookingMVC) in 284.9632ms 
+2022-07-07 21:22:39.1621||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'RestaurantBookingMVC.Controllers.HomeController.Index (RestaurantBookingMVC)' 
+2022-07-07 21:22:39.1621||DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection. 
+2022-07-07 21:22:39.1855||DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection. 
+2022-07-07 21:22:39.1855||DEBUG|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|Connection ID "18302628908719144961" disconnecting. 
+2022-07-07 21:22:39.1855||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:44377/ - - - 200 - text/html;+charset=utf-8 385.2199ms 
+2022-07-07 21:22:39.2138||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:44377/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - 
+2022-07-07 21:22:39.2138||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:44377/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - - 
+2022-07-07 21:22:39.2138||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:44377/lib/bootstrap/dist/css/bootstrap.min.css - - 
+2022-07-07 21:22:39.2138||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:44377/css/site.css - - 
+2022-07-07 21:22:39.2138||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:44377/lib/jquery/dist/jquery.min.js - - 
+2022-07-07 21:22:39.2138||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:44377/_framework/aspnetcore-browser-refresh.js - - 
+2022-07-07 21:22:39.2138||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-07-07 21:22:39.2138||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-07-07 21:22:39.2138||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-07-07 21:22:39.2138||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-07-07 21:22:39.2138||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-07-07 21:22:39.2284||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:44377/_vs/browserLink - - 
+2022-07-07 21:22:39.2284||TRACE|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Range header's value is empty. 
+2022-07-07 21:22:39.2284||TRACE|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Range header's value is empty. 
+2022-07-07 21:22:39.2284||TRACE|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Range header's value is empty. 
+2022-07-07 21:22:39.2284||TRACE|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Range header's value is empty. 
+2022-07-07 21:22:39.2284||TRACE|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Range header's value is empty. 
+2022-07-07 21:22:39.2284||DEBUG|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|Connection ID "18158513712053354497" disconnecting. 
+2022-07-07 21:22:39.2284||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:44377/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 20.5655ms 
+2022-07-07 21:22:39.2284||INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/js/site.js'. Physical path: 'E:\CS\WEB\RestaurantBookingApp\RestaurantBookingMVC\wwwroot\js\site.js' 
+2022-07-07 21:22:39.2284||DEBUG|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|Connection ID "18230571306091282433" disconnecting. 
+2022-07-07 21:22:39.2284||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:44377/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - - - 200 230 application/javascript 24.1285ms 
+2022-07-07 21:22:39.2440||INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/css/site.css'. Physical path: 'E:\CS\WEB\RestaurantBookingApp\RestaurantBookingMVC\wwwroot\css\site.css' 
+2022-07-07 21:22:39.2440||DEBUG|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|Connection ID "18302628930193981441" disconnecting. 
+2022-07-07 21:22:39.2440||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:44377/css/site.css - - - 200 1417 text/css 34.9580ms 
+2022-07-07 21:22:39.2440||INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'E:\CS\WEB\RestaurantBookingApp\RestaurantBookingMVC\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css' 
+2022-07-07 21:22:39.2562||DEBUG|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|Connection ID "18374686528526876676" disconnecting. 
+2022-07-07 21:22:39.2562||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:44377/lib/bootstrap/dist/css/bootstrap.min.css - - - 200 155764 text/css 42.9488ms 
+2022-07-07 21:22:39.2728||INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'E:\CS\WEB\RestaurantBookingApp\RestaurantBookingMVC\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js' 
+2022-07-07 21:22:39.2728||INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: 'E:\CS\WEB\RestaurantBookingApp\RestaurantBookingMVC\wwwroot\lib\jquery\dist\jquery.min.js' 
+2022-07-07 21:22:39.2728||DEBUG|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|Connection ID "18302628900129210369" disconnecting. 
+2022-07-07 21:22:39.2728||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:44377/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 200 78641 application/javascript 62.0758ms 
+2022-07-07 21:22:39.2728||DEBUG|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|Connection ID "18374686494167138307" disconnecting. 
+2022-07-07 21:22:39.2728||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:44377/lib/jquery/dist/jquery.min.js - - - 200 89476 application/javascript 63.4531ms 
+2022-07-07 21:22:39.2728||DEBUG|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|Connection ID "18230571336156053505" disconnecting. 
+2022-07-07 21:22:39.2728||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:44377/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 54.4413ms 
+2022-07-07 21:22:39.3290||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:44377/favicon.ico - - 
+2022-07-07 21:22:39.3290||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-07-07 21:22:39.3290||TRACE|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Range header's value is empty. 
+2022-07-07 21:22:39.3342||INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/favicon.ico'. Physical path: 'E:\CS\WEB\RestaurantBookingApp\RestaurantBookingMVC\wwwroot\favicon.ico' 
+2022-07-07 21:22:39.3342||DEBUG|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|Connection ID "18374686494167138309" disconnecting. 
+2022-07-07 21:22:39.3342||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:44377/favicon.ico - - - 200 5430 image/x-icon 5.5342ms 
